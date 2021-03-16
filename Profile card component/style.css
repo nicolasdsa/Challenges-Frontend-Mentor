@@ -1,0 +1,48 @@
+body{
+}
+
+.card{
+    margin: 0 auto;
+    width: 350px;
+    display:grid;
+    grid-template-areas: 
+    "top top top"
+    ". picture ."
+    ". name ."
+    ". city ."
+    "followers likes photos";
+}
+
+.top{
+    grid-area: top;
+}
+
+
+.picture{
+    grid-area: picture;
+    border-radius: 100%;
+    border: solid white 5px;
+    position: relative;
+    top:-45px;
+}
+
+.name {
+    grid-area: name;
+}
+
+.city {
+    grid-area: city;
+    text-align: center;
+}
+
+.followers{
+    grid-area: followers;
+}
+
+.likes{
+    grid-area: likes;
+}
+
+.photos{
+    grid-area: photos;
+}
