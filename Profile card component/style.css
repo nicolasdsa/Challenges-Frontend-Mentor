@@ -1,20 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 body{
+    background-image: url("images/bg-pattern-top.svg") , url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat,no-repeat;
+    background-position: right calc();
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+
 }
 
+/*right bottom 200%
+150% -75%
+
+*/
 .card{
-    margin: 0 auto;
     width: 350px;
     display:grid;
     grid-template-areas: 
     "top top top"
     ". picture ."
-    ". name ."
-    ". city ."
+    "name name name"
+    "city city city"
     "followers likes photos";
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    border-radius: 5%;
 }
 
 .top{
     grid-area: top;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+
 }
 
 
@@ -28,21 +45,28 @@ body{
 
 .name {
     grid-area: name;
+    text-align: center;
+
 }
 
 .city {
     grid-area: city;
     text-align: center;
+    border-bottom: 5px solid hsl(0, 0%, 59%);
+
 }
 
 .followers{
     grid-area: followers;
+    text-align: center;
 }
 
 .likes{
     grid-area: likes;
+    text-align: center;
 }
 
 .photos{
     grid-area: photos;
+    text-align: center;
 }
