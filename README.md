@@ -6,7 +6,7 @@ Meu perfil: https://www.frontendmentor.io/profile/nicolasdsa
 
 Projetos:
 
-https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ (Em desenvolvimento)
+https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ (Completado)
 https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA (Em desenvolvimento)
 https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2- (Em desenvolvimento)
  
