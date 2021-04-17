@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+.body{
+    min-width: 100vh;
+    display: grid;
+    
+}
+
+a{
+    border-radius: 25%;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px,310px));
+    grid-template-rows: repeat(3,minmax(200px,500px));
+
+    
+}
+
+.column {
+    display: grid;
+    grid-template-areas: 
+    "image"
+    "title"
+    "text"
+    "button";
+    font-size: 15px;
+    padding:50px;
+
+}
+
+.column:first-child{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.column:nth-child(2){
+    background-color:hsl(184, 100%, 22%);
+}
+
+.column:nth-child(3){
+    background-color:hsl(179, 100%, 13%);
+}
+
+.image {
+    grid-area: image;
+}
+
+.title{
+    grid-area: title;
+    font-family: 'Big Shoulders Display', cursive;
+    color:hsl(0, 0%, 95%);
+}
+
+.text {
+    grid-area: text;
+    font-family: 'Lexend Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+.button {
+    grid-area: button;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color:  hsl(0, 0%, 95%);
+    border: none;
+}
+
+button{
+    border-radius: 45%;
+}
+
+.button:first-child{
+    color: hsl(31, 49%, 15%);
+}
+
+.button:nth-child(2){
+    color:hsl(184, 100%, 22%);
+}
+
+.button:nth-child(3){
+    color:hsl(179, 100%, 13%);
+}
