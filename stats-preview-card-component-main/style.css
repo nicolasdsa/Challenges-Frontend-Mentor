@@ -66,6 +66,8 @@ body{
     color:hsla(0, 0%, 100%, 0.6);
 }
 .image-div{
+    display: flex;
+    flex: 1 1 160px;
     background-color: hsl(277, 64%, 61%);
 }
 
@@ -75,13 +77,25 @@ body{
 }
 
 .image{
-    display: block;
+    display: flex;
+    width: 100%;
     mix-blend-mode: multiply;
 }
+@media(max-width: 1000px){
+    .card{
+        flex-wrap:wrap-reverse;
+        max-height: 100%;
+        max-width: 100%;
+        flex-shrink: 900px;
+    }
+}
+
 
 @media(max-width: 481px){
     .card{
         flex-wrap:wrap-reverse;
+        max-height: 100%;
+        max-width: 100%;
     }
     .image-mobile{
         display: block;
@@ -90,5 +104,10 @@ body{
     .image{
         display: none;
     }
+    .numbers{
+        flex-flow: column;
+        justify-content: center;
+    }
+
 
 }
