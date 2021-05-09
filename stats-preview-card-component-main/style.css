@@ -29,6 +29,7 @@ body{
 
 .title{
     font-size: 35px;
+    font-weight: bold;
     text-align: left;
     margin-bottom: 30px;
     color:hsl(0, 0%, 100%);
@@ -40,13 +41,14 @@ body{
 
 .par {
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.7;
     color: hsla(0, 0%, 100%, 0.75);
     margin-bottom: 60px;
 }
 
 .numbers{
     display: flex;
+    justify-content: space-between;
 }
 
 .teste {
@@ -59,6 +61,7 @@ body{
 }
 
 .caption{
+    margin-top: 5px;
     font-family: "Lexend Deca";
     text-transform: uppercase;
     font-size: 12px;
@@ -82,6 +85,7 @@ body{
     width: 100%;
     mix-blend-mode: multiply;
 }
+
 @media(max-width: 820px){
 
     .card{
@@ -91,9 +95,6 @@ body{
     }
     .text{
         padding: 65px;
-    }
-    .numbers{
-        justify-content: space-between;
     }
     .image{
         min-width: 300px;
