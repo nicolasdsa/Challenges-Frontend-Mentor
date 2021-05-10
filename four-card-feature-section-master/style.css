@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+    background: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    ".       teambuilder  ."
+    "supervisor  .         calculator"
+    ".       karma        .";
+    justify-content: center;
+}
+
+.intro {
+    display: grid;
+    grid-column-start: 3;
+    width: 510px;
+    height: 160px;
+    text-align: center;
+}
+.card{
+    display: grid;
+    grid-template-areas: 
+    "title  title  title     "
+    "phrase phrase phrase"
+    ".      .      image";
+    grid-template-columns: repeat(3,1fr);
+    background: white;
+    width: 350px;
+    height: 250px;
+    text-align: left;
+    border-radius: 10px;
+
+
+}
+
+.card:nth-child(2){
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.card:nth-child(3){
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.card:nth-child(4){
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.card:nth-child(5){
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.title{
+    grid-area: title;
+    padding-left: 30px;
+
+
+}
+
+.phrase{
+    grid-area: phrase;
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+    padding-right: 60px;
+    padding-left: 30px;
+}
+
+.image{
+    grid-area: image;
+}
+
+.intro{
+    grid-area: intro;
+}
+
+.teambuilder{
+    grid-area: teambuilder;
+
+}
+
+.supervisor{
+    grid-area: supervisor;
+}
+
+.calculator{
+    grid-area: calculator;
+
+}
+
+.karma{
+    grid-area: karma;
+}
