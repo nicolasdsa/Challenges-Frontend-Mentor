@@ -1,26 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 body {
+    min-height: 95vh;
     background: hsl(0, 0%, 98%);
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 15px;    
+
 }
 
 .container{
     display: grid;
     grid-template-areas: 
-    ".       teambuilder  ."
-    "supervisor  .         calculator"
-    ".       karma        .";
-    justify-content: center;
+    ".           intro        ."
+    ".           teambuilder  ."
+    "supervisor  karma            calculator";
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
 }
 
 .intro {
-    display: grid;
-    grid-column-start: 3;
     width: 510px;
     height: 160px;
+    grid-area: intro;
     text-align: center;
+}
+
+.powered{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 0.5;
+
+}
+
+.reliable{
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 0.5;
+
 }
 .card{
     display: grid;
@@ -29,12 +45,12 @@ body {
     "phrase phrase phrase"
     ".      .      image";
     grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 2fr 2fr;
     background: white;
     width: 350px;
     height: 250px;
     text-align: left;
     border-radius: 10px;
-
 
 }
 
@@ -57,20 +73,24 @@ body {
 .title{
     grid-area: title;
     padding-left: 30px;
-
-
+    margin-bottom: 0px;
+    margin-top: 25px;
 }
 
 .phrase{
     grid-area: phrase;
     color: hsl(229, 6%, 66%);
-    font-weight: 200;
+    font-weight: 400;
     padding-right: 60px;
     padding-left: 30px;
+    font-size: 12px;
 }
 
 .image{
     grid-area: image;
+    justify-self: end;
+    margin-right: 35px;
+
 }
 
 .intro{
@@ -79,18 +99,115 @@ body {
 
 .teambuilder{
     grid-area: teambuilder;
+    margin-top: 110px;
 
 }
 
 .supervisor{
     grid-area: supervisor;
+    position: relative;
+    left: 80px;
+    bottom: 85px;
+
 }
 
 .calculator{
     grid-area: calculator;
+    position: relative;
+    right: 80px;
+    bottom: 85px;
 
 }
 
 .karma{
     grid-area: karma;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+@media(max-width: 1000px){
+    .container{
+        grid-template-areas: 
+        "intro intro"
+        "supervisor teambuilder"
+        "karma calculator";
+        grid-template-columns: 1fr 1fr;
+    }
+    .card{
+ 
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .teambuilder{
+        margin-top: 75px;
+    }
+    
+    .supervisor{
+        left: 0px;
+        bottom: 0px;
+        margin-top: 75px;
+    }
+    
+    .calculator{
+        right: 0px;
+        bottom: 0px;
+        margin-top: 25px;  
+        margin-bottom: 0px;
+    }
+    
+    .karma{
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+}
+
+
+@media(max-width: 450px){
+    .container{
+        grid-template-areas: 
+        "intro"
+        "supervisor"
+        "teambuilder"
+        "karma"
+        "calculator";
+        grid-template-columns: 1fr;
+    }
+    .card{
+        width: 310px;
+        height: 220px;
+    }
+
+    .intro {
+        width: 310px;
+        height: 100%;
+    }
+    .powered{
+        font-weight: 600;
+        font-size: 25px;
+    }
+    
+    .reliable{
+        font-size: 25px;
+        font-weight: 200;
+    }
+
+    .teambuilder{
+        margin-top: 25px;
+    }
+    
+    .supervisor{
+        margin-top: 75px;
+    }
+    
+    .calculator{
+        margin-top: 25px;  
+        margin-bottom: 75px;
+    }
+    
+    .karma{
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
 }
