@@ -19,11 +19,12 @@ body {
 }
 
 .intro {
- 
     width: 510px;
     height: 160px;
     grid-area: intro;
     text-align: center;
+    color: hsl(234, 12%, 34%);
+
 }
 
 .powered{
@@ -79,6 +80,7 @@ body {
     padding-left: 30px;
     margin-bottom: 0px;
     margin-top: 25px;
+    color: hsl(234, 12%, 34%);
 }
 
 .phrase{
