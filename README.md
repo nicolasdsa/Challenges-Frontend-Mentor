@@ -14,8 +14,6 @@ https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2
 
 https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62 (Completado - Utilizando CSS Flexbox)
 
-https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK (Em desenvolvimento - Utilizando CSS Grid)
+https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK (Completado - Utilizando CSS Grid)
 
- 
-
-novo iniciado é isso
+https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc (Em desenvolvimento - Utilizando CSS Flexbox)
