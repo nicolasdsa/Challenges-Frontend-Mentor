@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    min-height: 95vh;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    max-height: 900px;
+}
+
+.intro{
+    background: white;
+}
+
+.join{
+    color:  hsl(179, 62%, 43%);
+    font-weight: bold;
+}
+
+.day{
+    color: hsl(71, 73%, 54%);
+}
+
+.info {
+    display: flex;
+    flex: 1;
+
+}
+
+.carac{
+    background-color: hsl(71, 73%, 54%);
+    flex: 1;
+}
+
+.carac ul {
+    list-style: none;
+}
+
+.subscription{
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    flex: 1;
+}
