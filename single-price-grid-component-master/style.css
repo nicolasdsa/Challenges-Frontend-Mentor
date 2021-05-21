@@ -4,17 +4,31 @@ body{
     font-family: 'Karla', sans-serif;
     background-color: hsl(204, 43%, 93%);
     min-height: 95vh;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+h4{
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 22px;
+    color: white;
 }
 .container{
     display: flex;
     flex-wrap: wrap;
-    max-width: 900px;
-    max-height: 900px;
+    max-width: 640px;
+    max-height: 475px;
 }
 
 .intro{
     background: white;
+}
+
+.text{
+    margin: 45px 80px 45px 40px
 }
 
 .join{
@@ -26,6 +40,10 @@ body{
     color: hsl(71, 73%, 54%);
 }
 
+.gain{
+    color:hsl(218, 22%, 67%);
+}
+
 .info {
     display: flex;
     flex: 1;
@@ -33,16 +51,43 @@ body{
 }
 
 .carac{
-    background-color: hsl(71, 73%, 54%);
+    background: #4abebd;   
     flex: 1;
+    padding: 40px 0px 40px 40px;
+
 }
 
 .carac ul {
     list-style: none;
+    padding: 0px;
+    color:hsl(204, 43%, 93%)
 }
 
 .subscription{
     background-color: hsl(179, 62%, 43%);
     color: white;
     flex: 1;
+    padding: 40px 0px 40px 40px;
+}
+
+sup{
+}
+
+.dollar{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.sign {
+    background-color: hsl(71, 73%, 54%);
+    padding: 20px 90px;
+    border-radius: 7px;
+}
+
+.full {
+    margin-bottom: 45px;
+}
+
+@media(max-width: 500px){
+
 }
