@@ -15,6 +15,7 @@ h4{
     margin: 0px;
     margin-bottom: 22px;
     color: white;
+    opacity: 0.9;
 }
 .container{
     display: flex;
@@ -25,23 +26,23 @@ h4{
 
 .intro{
     background: white;
-}
-
-.text{
-    margin: 45px 80px 45px 40px
+    padding: 40px 70px 45px 40px;
 }
 
 .join{
     color:  hsl(179, 62%, 43%);
     font-weight: bold;
+    font-size: 24px;
 }
 
 .day{
     color: hsl(71, 73%, 54%);
+    font-size: 19px;
 }
 
 .gain{
     color:hsl(218, 22%, 67%);
+    line-height: 1.7;
 }
 
 .info {
@@ -60,7 +61,9 @@ h4{
 .carac ul {
     list-style: none;
     padding: 0px;
-    color:hsl(204, 43%, 93%)
+    color:hsl(204, 43%, 93%);
+    line-height: 1.6;
+    font-size: 14px;
 }
 
 .subscription{
@@ -71,23 +74,48 @@ h4{
 }
 
 sup{
+    margin-left: 10px;
+    font-size: 16px;
+    opacity: 0.6;
 }
 
 .dollar{
     font-size: 30px;
     margin-bottom: 15px;
+    opacity: 0.9;
 }
 
 .sign {
     background-color: hsl(71, 73%, 54%);
     padding: 20px 90px;
     border-radius: 7px;
+    color: white;
+    cursor: pointer;
 }
 
 .full {
     margin-bottom: 45px;
+    opacity: 0.8;
 }
 
-@media(max-width: 500px){
+@media(max-width: 600px){
+    .info{
+        flex-flow: row;
+        flex-wrap: wrap;
+       
+    }
 
+    .carac{
+        min-width: 250px;
+  
+    }
+    .subscription{
+        min-width: 250px;
+
+    }        
+
+}
+
+@media(max-width: 400px){
+    
 }
