@@ -1,1 +1,177 @@
-/* Style */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body{
+    background-image: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "logo logo"
+    "mockup text";
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo{
+    grid-area: logo;
+    margin-top: 65px;
+    margin-left: 80px;
+}
+
+.mockup{
+    grid-area: mockup;
+    width: 100%;
+    margin-left: 80px;
+    margin-top: 105px;
+    
+}
+
+.text {
+    grid-area: text;
+    display: grid;
+    grid-template-areas:
+    "teste teste"
+    ".     social";
+    grid-template-rows: 1fr 50px;
+    color: white;
+    font-size: 16px;
+    margin-left: 135px;
+    margin-right: 95px;
+    margin-top: 105px;
+
+}
+
+.teste{
+    grid-area:teste;
+}
+
+.social{
+    grid-area: social;
+    margin-right: -15px;
+    margin-bottom: 40px;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-right: 75px;
+}
+
+.phrase{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+
+}
+
+.button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 16px 68px;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    border-radius:  50px;
+    cursor: pointer;
+}
+
+a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+i:hover{
+    border-color:hsl(300, 69%, 71%);
+    color:hsl(300, 69%, 71%);
+}
+
+
+
+.fab{
+    border-radius: 50%;
+    border: solid 1px white;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px
+}
+
+.fab:nth-child(1){
+    padding: 10px 12px;
+}
+
+@media (max-width:1150px){
+    .container{
+        grid-template-areas: 
+        "logo"
+        "mockup"
+        "text";
+        grid-template-columns: 1fr;
+    }
+
+    .mockup{
+        width: 85%;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 105px;
+        
+    }
+    .text {
+        grid-template-rows: 1fr 50px;
+        margin-left: 135px;
+        margin-right: 95px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+    .social{
+        margin-right: -15px;
+        margin-bottom: 40px;
+    }
+    
+    .title{
+        margin-right: 0px;
+    }
+}
+
+@media (max-width:760px){
+
+    .text {
+        grid-template-areas:
+        "teste "
+        "social";
+        grid-template-rows: 1fr;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+    
+    }
+
+    .social{
+        margin-top: 80px;
+    }
+
+    .mockup{
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+        
+    }
+
+    .logo{
+    margin-top: 65px;
+    max-width: 250px;
+    max-height: 45px;
+    margin-left: 20px;
+    }
+}
+
+@media (max-width:375px){
+    body{
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        }
+}
