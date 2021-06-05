@@ -18,6 +18,6 @@ https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK (Com
 
 https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc (Completado - Utilizando CSS Flexbox)
 
-https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0 (Em desenvolvimento - Utilizando CSS Grid)
+https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0 (Completado - Utilizando CSS Grid)
 
 
