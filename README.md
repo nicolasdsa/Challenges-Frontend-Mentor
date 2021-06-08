@@ -21,3 +21,4 @@ https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0f
 https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0 (Completado - Utilizando CSS Grid)
 
 
+(Em desenvolvimento - Utilizando CSS Grid)
