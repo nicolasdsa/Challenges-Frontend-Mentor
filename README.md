@@ -23,3 +23,5 @@ https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-intro
 https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7 (Em desenvolvimento - Utilizando CSS Grid)
 
 https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT (Em desenvolvimento - Utilizando CSS Flexbox)
+
+(Em desenvolvimento - Utilizando CSS Flexbox)
