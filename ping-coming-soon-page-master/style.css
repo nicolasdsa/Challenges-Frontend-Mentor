@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "logo"
+    "soon"
+    "subscribe"
+    "form"
+    "image"
+    "media"
+    "copyright";
+  justify-items: center;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.soon {
+  grid-area: soon;
+}
+
+.subscribe {
+  grid-area: subscribe;
+}
+
+.form {
+  grid-area: form;
+}
+
+.image {
+  grid-area: image;
+}
+
+.media {
+  grid-area: media;
+}
+
+.copyright {
+  grid-area: copyright;
+}
