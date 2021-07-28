@@ -28,3 +28,5 @@ https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT (Em
 
 (Em desenvolvimento - Utilizando CSS Grid)
 
+(Em desenvolvimento - Utilizando CSS Grid)
+
