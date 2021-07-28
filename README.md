@@ -25,3 +25,6 @@ https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7 (Co
 https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT (Em desenvolvimento - Utilizando CSS Flexbox)
 
 (Em desenvolvimento - Utilizando CSS Flexbox)
+
+(Em desenvolvimento - Utilizando CSS Grid)
+
