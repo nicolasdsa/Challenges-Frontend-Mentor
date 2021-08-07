@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+body {
+  font-family: "Space Mono", monospace;
+}
+
+button {
+  font-family: "Space Mono", monospace;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  font-family: "Space Mono", monospace;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 120px));
+  gap: 15px;
+}
