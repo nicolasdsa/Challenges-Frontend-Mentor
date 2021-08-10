@@ -13,26 +13,33 @@
 
 <body>
 
-  <p>Bill</p>
-  <input placeholder="CUSTOM" type="text" class="bill">
-  <p>Select Tip %</p>
-  <button class="button">5%</button>
-  <button class="button">10%</button>
-  <button class="button">15%</button>
-  <button class="button">25%</button>
-  <button class="button">50%</button>
-  <input placeholder="CUSTOM" type="text">
+  <div class="container">
+    <div class="form">
+      <p>Bill</p>
+      <input placeholder="CUSTOM" type="number" class="bill">
+      <p>Select Tip %</p>
+      <div class="buttons">
+        <button class="button">5%</button>
+        <button class="button">10%</button>
+        <button class="button">15%</button>
+        <button class="button">25%</button>
+        <button class="button">50%</button>
+        <input placeholder="CUSTOM" type="number" class="custom">
+      </div>
 
-  <p>Number of People</p>
-  <input placeholder="CUSTOM" type="text" class="person">
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  <button>Reset</button>
+      <p>Number of People</p>
+      <input placeholder="CUSTOM" type="number" class="person">
+    </div>
+    <div class="result">
+      Tip Amount<br>
+      / person
+      <p class="amount"></p>
+      Total <br>
+      / person
+      <p class="total"> </p>
+      <button>Reset</button>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
