@@ -1,0 +1,16 @@
+body {
+  background-color:hsl(222, 26%, 31%);
+}
+.container{
+  max-width: 540px;
+  max-height: 710px;
+}
+.keyboard{
+  background-color:hsl(223, 31%, 20%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+  gap: 25px;
+}
+
+.key {
+}
