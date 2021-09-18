@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+.header {
+  background-image: url(../images/desktop/image-hero.jpg);
+  color: white;
+}
+
+.immersive {
+  border: solid 1px white;
+}
+
+.creations{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+  
+}
+.deep {
+  background-image: url(../images/desktop/image-deep-earth.jpg);
+  background-repeat: no-repeat;
+}
+
+.arcade {
+  background-image: url(../images/desktop/image-night-arcade.jpg);
+  background-repeat: no-repeat;
+}
+
+.soccer {
+  background-image: url(../images/desktop/image-soccer-team.jpg);
+  background-repeat: no-repeat;
+}
+
+.grid {
+  background-image: url(../images/desktop/image-grid.jpg);
+  background-repeat: no-repeat;
+}
+
+.above {
+  background-image: url(../images/desktop/image-from-above.jpg);
+  background-repeat: no-repeat;
+}
+
+.pocket {
+  background-image: url(../images/desktop/image-pocket-borealis.jpg);
+  background-repeat: no-repeat;
+}
+
+.curiosity {
+  background-image: url(../images/desktop/image-curiosity.jpg);
+  background-repeat: no-repeat;
+}
+
+.make {
+  background-image: url(../images/desktop/image-fisheye.jpg);
+  background-repeat: no-repeat;
+}
