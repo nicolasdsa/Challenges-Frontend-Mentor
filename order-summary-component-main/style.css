@@ -26,11 +26,12 @@ body{
   background: url("images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
   background-color: var(--Pale_blue);
+  background-size:contain;
   font-size: 16px;
   display: grid;
   align-content: center;
   justify-content: center;
-  height: 97.5vh;
+  min-height: 100vh;
 }
 
 .container{
@@ -51,6 +52,7 @@ body{
   color: var(--Dark_blue);
   font-weight: 900;
   margin-top: 40px;
+  font-size: 28px;
 }
 
 .phrase{
@@ -74,6 +76,8 @@ body{
   grid-area: price;
   justify-self: left;
   color: var(--Desaturated_blue);
+  position: relative;
+  right: 15px;
 }
 
 .plan{
@@ -81,6 +85,8 @@ body{
   justify-self: left;
   color: var(--Dark_blue);
   font-weight: 900;
+  position: relative;
+  right: 15px;
 }
 
 .icon{
@@ -91,9 +97,11 @@ body{
 .change{
   grid-area: change;
   align-self: center;
+  justify-self: right;
   text-decoration: underline;
   color: var(--Bright_blue);
-  font-weight: 900;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .change:hover{
@@ -107,9 +115,9 @@ body{
   color: white;
   border-radius: 10px;
   font-weight: 700;
-  margin-top: 90px;
   box-shadow: 0px 12px 29px -5px rgba(0,0,0,0.3);
-}
+  display: inline-block;
+} 
 
 .payment:hover{
   background-color: var(--Desaturated_blue);
@@ -118,6 +126,8 @@ body{
 .cancel{
   font-weight: 700;
   color: var(--Desaturated_blue);
+  display: inline-block;
+  margin-top: 30px;
 }
 
 .cancel:hover{
@@ -130,5 +140,21 @@ body{
   }
   .container{
     margin: 30px 0px;
+  }
+  .price{
+    right: 0px;
+  }
+  
+  .plan{
+    right: 0px;
+  }
+}
+
+@media(max-width: 380px){
+  .payment{
+    padding: 15px 55px;
+  } 
+  .plans{
+    padding: 25px 10px;
   }
 }
