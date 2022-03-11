@@ -30,6 +30,7 @@ body{
   display: grid;
   align-content: center;
   justify-content: center;
+  height: 97.5vh;
 }
 
 .container{
