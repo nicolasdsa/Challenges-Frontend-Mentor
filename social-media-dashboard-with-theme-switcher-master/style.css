@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+h1, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img{
+  align-self: center;
+}
+
+:root{
+  /* Dark Theme */
+
+  --Very_Dark_Blue: hsl(230, 17%, 14%);
+  --Very_Dark_Blue: hsl(232, 19%, 15%);
+  --Dark_Desaturated_Blue: hsl(228, 28%, 20%);
+  --Desaturated_Blue: hsl(228, 34%, 66%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Light Theme */
+
+  --White: hsl(0, 0%, 100%);
+  --Very_Pale_Blue: hsl(225, 100%, 98%);
+  --Light_Grayish_Blue: hsl(227, 47%, 96%);
+  --Dark_Grayish_Blue: hsl(228, 12%, 44%);
+
+  /* Primary */
+
+  --Lime_Green: hsl(163, 72%, 41%);
+  --Bright_Red: hsl(356, 69%, 56%);
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --YouTube: hsl(348, 97%, 39%);
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+main{
+  padding: 40px 160px 0px 160px;
+}
+
+section{
+    padding: 50px 160px 70px 160px;
+}
+
+.red{
+  color: var(--Bright_Red);
+}
+
+.green{
+  color: var(--Lime_Green);
+}
+
+
+.socialMedia{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 30px;
+}
+
+.socialPlatform{
+  display: grid;
+  grid-template-areas: 
+  "icon user"
+  "number number"
+  "followers followers"
+  "arrow progress";
+  padding: 25px 0px;
+  border-top: 4px solid;
+  border-radius: 5px;
+}
+
+.socialPlatform:first-child{
+  border-color: var(--Facebook);
+}
+
+.socialPlatform:nth-child(3){
+  border-color: var(--Instagram);
+}
+
+.socialPlatform:nth-child(4){
+  border-color: var(--YouTube);
+}
+
+.socialPlatform:nth-child(2){
+  border-color: var(--Twitter);
+}
+
+.socialPlatform:nth-child(3){
+  border-color: var(--Instagram);
+}
+
+.socialPlatform:nth-child(4){
+  border-color: var(--YouTube);
+}
+
+
+.icon{
+  grid-area:icon;
+  justify-self: right;
+  align-self: center;
+  padding-right: 10px;
+}
+
+.user{
+  grid-area: user;
+}
+
+.number{
+  grid-area: number;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 30px;
+  font-weight: 700;
+}
+
+.followers{
+  grid-area: followers;
+  text-align: center;
+  letter-spacing: 6px;
+  font-weight: 400;
+}
+
+.arrow{
+  grid-area: arrow;
+  justify-self: right;
+  align-self: center;
+}
+
+.progress{
+  grid-area: progress;
+}
+
+.overview{
+  font-weight: 700;
+}
+
+
+
+.todaySocialPlataform{
+  display: grid;
+  grid-template-areas: 
+  "description iconToday"
+  "numberToday porcentage";
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.description{
+  grid-area: description;
+  align-self: top;
+  justify-self: start;
+  padding-bottom: 30px;
+}
+
+.iconToday{ 
+  grid-area: iconToday;
+  align-self: top;
+  justify-self: end;
+  padding-bottom: 30px;
+}
+
+.numberToday{
+  grid-area: numberToday;
+  align-self: end;
+  justify-self: start;
+  font-weight: 700;
+}
+
+.porcentage{
+  grid-area: porcentage;
+  align-self: end;
+  justify-self: end;
+  display: flex;
+}
+
+/* Light theme */
+
+.backgroundLightCard{
+  background-color: var(--Light_Grayish_Blue);
+}
+
+.TextDarkblue{
+  color: var(--Dark_Grayish_Blue);
+}
