@@ -5,33 +5,47 @@
   padding: 0px;
 }
 
+:root{
+--strongCyan: hsl(172, 67%, 45%);
+--veryDarkCyan: hsl(183, 100%, 15%);
+--darkGrayishCyan: hsl(186, 14%, 43%);
+--darkGrayishCyan2: hsl(184, 14%, 56%);
+--lightGrayishCyan: hsl(185, 41%, 84%);
+--lightGrayishCyan2: hsl(189, 41%, 97%);
+--white: hsl(0, 0%, 100%);
+}
+
 body {
   font-family: "Space Mono", monospace;
-  background-color: hsl(185, 41%, 84%);
+  background-color: var(--lightGrayishCyan);
   min-height: 100vh;
+  font-size: 14px;
 }
 
 button {
   font-family: "Space Mono", monospace;
 }
+
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
 input[type="number"] {
   font-family: "Space Mono", monospace;
   -moz-appearance: textfield;
   appearance: textfield;
-  background-color: hsl(189, 41%, 97%);
+  background-color: var(--lightGrayishCyan);
   border-style: none;
   width: 100%;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 50% 50%;
-  background-color: white;
-  max-width: 930px;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  background-color: var(--white);
   max-height: 490px;
+  border-radius: 25px;
 }
 
 .form {
@@ -40,8 +54,11 @@ input[type="number"] {
 .bill {
   background-image: url("images/icon-dollar.svg");
   background-repeat: no-repeat;
-  background-position: left, center;
+  background-position: left , center ;
   text-align: end;
+  height: 45px;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
 .buttons {
   display: grid;
@@ -54,7 +71,7 @@ input[type="number"] {
 .button {
   border-style: none;
   color: white;
-  background-color: hsl(183, 100%, 15%);
+  background-color: var(--veryDarkCyan);
   padding: 15px 45px;
   border-radius: 8%;
   font-size: 24px;
@@ -66,10 +83,41 @@ input[type="number"] {
   background-repeat: no-repeat;
   background-position: left, center;
   text-align: end;
+  height: 45px;
 }
 
 .result {
-  background-color: hsl(183, 100%, 15%);
-  margin: 30px 30px 30px 0;
+  display: grid;
+  grid-template-areas: 
+  "textTip amount"
+  "textTotal total"
+  "reset reset";
+  background-color: var(--veryDarkCyan);
+  margin: 30px 30px 30px 0px;
+  padding: 60px 40px 40px 40px;
   color: white;
+  border-radius: 15px;
+}
+
+.textTip{
+  grid-area: textTip;
+}
+
+.amount{
+  grid-area: amount;
+  justify-self: end;
+}
+
+.textTotal{
+  grid-area: textTotal;
+}
+
+.total{
+  grid-area: total;
+  justify-self: end;
+}
+
+.reset{
+  grid-area: reset;
+  margin-top: 120px;
 }
