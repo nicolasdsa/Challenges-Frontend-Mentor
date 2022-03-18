@@ -20,10 +20,15 @@ body {
   background-color: var(--lightGrayishCyan);
   min-height: 100vh;
   font-size: 14px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
 }
 
 button {
   font-family: "Space Mono", monospace;
+  border-style: none;
 }
 
 input[type="number"]::-webkit-inner-spin-button {
@@ -41,10 +46,10 @@ input[type="number"] {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(500px,1fr) minmax(500px,1fr);
   gap: 50px;
   background-color: var(--white);
-  max-height: 490px;
+  max-height: 530px;
   border-radius: 25px;
 }
 
@@ -53,37 +58,55 @@ input[type="number"] {
 }
 .bill {
   background-image: url("images/icon-dollar.svg");
-  background-repeat: no-repeat;
-  background-position: left , center ;
-  text-align: end;
-  height: 45px;
-  padding-right: 10px;
-  box-sizing: border-box;
+  margin-bottom: 50px;
 }
+
+.text{
+  color: var(--darkGrayishCyan2);
+}
+
 .buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 120px));
+  grid-template-columns: repeat(auto-fit, minmax(30px, 140px));
   gap: 15px;
   margin-top: 20px;
   margin-bottom: 45px;
 }
 
 .button {
-  border-style: none;
   color: white;
   background-color: var(--veryDarkCyan);
   padding: 15px 45px;
   border-radius: 8%;
   font-size: 24px;
+  font-weight: 500;
   text-align: center;
+}
+
+.active{
+  background-color: var(--strongCyan);
+  color: var(--veryDarkCyan);
+}
+
+.custom{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .person {
   background-image: url("images/icon-person.svg");
+  margin-top: 15px;
+}
+
+.input{
   background-repeat: no-repeat;
-  background-position: left, center;
+  background-position: left 15px center;
   text-align: end;
   height: 45px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .result {
@@ -120,4 +143,9 @@ input[type="number"] {
 .reset{
   grid-area: reset;
   margin-top: 120px;
+  background-color: var(--strongCyan);
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--veryDarkCyan);
 }

@@ -9,42 +9,48 @@ let resetButton = document.querySelector(".reset");
 amount.innerHTML = "0.00";
 total.innerHTML = "0.00";
 
-button.forEach((event) => event.addEventListener("click", teste));
+button.forEach((event) => event.addEventListener("click", tipPercentage));
 custom.addEventListener("change", Tipcustom);
 resetButton.addEventListener("click", resetFunction);
 
-function teste(event) {
-  const tip = parseInt(event.target.innerText.replace("%", ""));
+function tipPercentage(event) {
+  buttonCSS(this);
+  const tipValue = parseInt(event.target.innerText.replace("%", ""));
   const people = parseInt(person.value);
   if (people < 0 || isNaN(people) == true) {
     console.log("0 nao pode")
   }
   else {
-    const costtotal =  parseFloat(bill.value) + (bill.value * ( tip / 100));
-    const divide = (costtotal / people).toFixed(2);
-    amount.innerHTML = divide;
-    total.innerHTML = costtotal;
+    tip(tipValue, people)
   }
 }
 
 function Tipcustom(){
-  const tip = parseInt(custom.value);
+  const tipValue = parseInt(custom.value);
   const people = parseInt(person.value);
   if (people < 0 || isNaN(people) == true) {
     console.log("0 nao pode custom")
   }
   else {
-    const costtotal =  parseFloat(bill.value) + (bill.value * ( tip / 100));
-    const divide = (costtotal / people).toFixed(2);
-    amount.innerHTML = divide;
-    total.innerHTML = costtotal;
+    tip(tipValue, people);
   }
 }
 
 function resetFunction(){
   amount.innerHTML = "0.00";
   total.innerHTML = "0.00";
-  person.value = "0";
-  bill.value = "0";
-
+  person.value = "";
+  bill.value = "";
 }
+
+function buttonCSS(event){
+  button.forEach((button) => button.classList.remove("active"));
+  event.classList.add("active");
+}
+
+function tip(tip, people){
+  const costtotal =  parseFloat(bill.value) + (bill.value * ( tip / 100));
+  const divide = (costtotal / people).toFixed(2);
+  amount.innerHTML = divide;
+  total.innerHTML = costtotal;
+} 
