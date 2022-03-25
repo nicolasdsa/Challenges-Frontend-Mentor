@@ -1,5 +1,7 @@
 # Challenges-Frontend-Mentor
 
+Readme melhor estilizado está em construção.
+
 Frontend Mentor é um site onde se encontra inumeros projetos para treinar as habilidades na construção de um website.
 
 Meu perfil: https://www.frontendmentor.io/profile/nicolasdsa
