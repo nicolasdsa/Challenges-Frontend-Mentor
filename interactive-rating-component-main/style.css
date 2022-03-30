@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --Orange: hsl(25, 97%, 53%);   
+    --White: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+*{
+    padding: 0px;
+    margin: 0px
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--veryDarkBlue);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 420px;
+    max-height: 420px;
+    background-color: var(--darkBlue);
+    border-radius: 20px;
+    padding: 30px 40px 30px 35px
+}
+
+.star{
+    padding: 25px;
+    background-color: var(--mediumGrey);
+    border-radius: 50%;
+    margin-bottom: 35px;
+}
+
+.title{
+    color: var(--White);
+    margin-bottom: 25px;
+}
+
+.phrase{
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: var(--lightGrey);
+    padding-right: 35px;
+}
+
+.list{
+    display: flex;
+    list-style-type: none;
+    color: var(--lightGrey);
+}
+
+.list li{
+    flex: 1;
+    padding: 22px;
+    background-color: var(--darkBlue);
+    border-radius: 50%;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.button{
+    color: var(--White);
+    background-color: var(--Orange);
+    border: none;
+    padding: 15px 140px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+
+/* Thanks */
+
+.thanks{
+    text-align: center;
+}
+
+.ratingSelected{
+    color: orangered;
+}
+
+.titleThanks{
+    color: var(--White);
+}
+
+
+.hidden{
+    display: none;
+}
+
