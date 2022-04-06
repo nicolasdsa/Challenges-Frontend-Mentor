@@ -10,6 +10,8 @@
 
   <link rel="stylesheet" href="style.css">
 
+  <script src="script.js"></script>
+
 </head>
 <body>
 
@@ -17,7 +19,7 @@
 
     <div class="rating">
 
-      <img class="star" src="images/icon-star.svg" alt="">
+      <img class="star" src="images/icon-star.svg" alt="" aria-hidden="true">
 
       <h1 class="title">How did we do?</h1>
 
@@ -39,13 +41,13 @@
 
     <div class="thanks hidden">
 
-      <img src="images/illustration-thank-you.svg" alt="">
+      <img src="images/illustration-thank-you.svg" alt="" aria-hidden="true">
 
-      <p class="ratingSelected">You selected <span class="noteRating">None</span> out of 5</p>
+      <p class="ratingSelected"><span class="span">You selected <span class="noteRating">None</span> out of 5</span></p>
 
-      <h1 class="titleThanks">Thank you!</h1>
+      <h1 class="title titleThanks">Thank you!</h1>
 
-      <p class="phraseThanks">We appreciate you taking the time to give a rating. If you ever need more support, 
+      <p class="phrase">We appreciate you taking the time to give a rating. If you ever need more support, 
       don’t hesitate to get in touch!</p>
 
     </div>
@@ -54,5 +56,4 @@
 
 
 </body>
-  <script src="script.js"></script>
 </html>

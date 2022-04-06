@@ -5,6 +5,7 @@
     --White: hsl(0, 0%, 100%);
     --lightGrey: hsl(217, 12%, 63%);
     --mediumGrey: hsl(216, 12%, 54%);
+    --lightMediumGrey: hsla(216, 12%, 54%, 0.1);
     --darkBlue: hsl(213, 19%, 18%);
     --veryDarkBlue: hsl(216, 12%, 8%);
 }
@@ -22,33 +23,34 @@ body{
     align-content: center;
     min-height: 100vh;  
     font-size: 15px;
+    word-wrap: break-word;
 }
 
 .container{
-    max-width: 300px;
-    max-height: 315px;
+    max-width: 350px;
+    max-height: 350px;
     background-color: var(--darkBlue);
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 30px 40px 30px 35px
 }
 
 .star{
     padding: 15px;
-    background-color: var(--mediumGrey);
+    background-color: var(--lightMediumGrey);
     border-radius: 50%;
     margin-bottom: 30px;
 }
 
 .title{
     color: var(--White);
-    font-size: 25px;
+    font-size: 28px;
     margin-bottom: 25px;
 }
 
 .phrase{
-    font-size: 15px;
     margin-bottom: 30px;
     color: var(--lightGrey);
+    line-height: 20px;
 }
 
 .list{
@@ -59,24 +61,53 @@ body{
 
 .list li{
     flex: 1;
-    padding: 15px;
+    padding: 17px;
     border-radius: 50%;
+    background-color: var(--lightMediumGrey);
     text-align: center;
     margin: 0px 10px;
+    cursor: pointer;
 }
 
-.active{
+.list li:first-child{
+    margin-left: 0px;
+}
+
+.list li:last-child{
+    margin-right: 0px;
+}
+
+.list li:hover{
+    transition: .5s;
     background-color: var(--Orange);
+    color: white;
+}
+
+.list li.active{
+    transition: .5s;
+    background-color: var(--lightGrey);
+    color: white;
 }
 
 .button{
     color: var(--White);
     background-color: var(--Orange);
     border: none;
-    padding: 15px 140px;
+    width: 100%;
+    padding: 15px 0px;
     margin-top: 25px;
     border-radius: 20px;
     justify-self: center;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    transition: .5s;
+    color: var(--Orange);
+    background-color: var(--White);
 }
 
 
@@ -87,11 +118,19 @@ body{
 }
 
 .ratingSelected{
-    color: orangered;
+    color: var(--Orange);
+    margin-top: 40px;
 }
 
-.titleThanks{
-    color: var(--White);
+.span{
+    background-color: var(--lightMediumGrey);
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+
+.title.titleThanks{
+    margin-top: 35px;
 }
 
 
@@ -99,3 +138,25 @@ body{
     display: none;
 }
 
+@media(max-width: 500px){
+    body{
+        font-size: 12.5px;
+    }
+
+    .container{
+        margin: 0px 25px;
+        padding: 30px 20px 30px 20px;
+        max-height: 400px;
+    }
+}
+
+@media(max-width: 370px){    
+    .list li{
+        padding: 10px;
+        margin: 0px 4px;
+    }
+
+    .span{
+        padding: 5px 10px;
+    }
+}
