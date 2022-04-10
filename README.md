@@ -50,5 +50,10 @@ Meu perfil: https://www.frontendmentor.io/profile/nicolasdsa
     <th><a target="_blank" href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI">Challenge</a></th>
     <th><a target="_blank" href="https://csb-tiwfhk.netlify.app/">Solution</a></th>
   </tr>
+  <tr>
+    <th>NFT preview card component</th>
+    <th><a target="_blank" href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U">Challenge</a></th>
+    <th><a target="_blank" href="https://csb-oqfe0q.netlify.app/">Solution</a></th>
+  </tr>
 
 </table>
