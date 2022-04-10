@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+  --softBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --VerydarkblueMain: hsl(217, 54%, 11%);
+  --veryDarkBlueCard: hsl(216, 50%, 16%);
+  --veryDarkBlueLine: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+
+img{
+  width: 100%;
+}
+
+*{
+  padding: 0px;
+  margin: 0px
+}
+
+body{
+  font-family: 'Outfit', sans-serif;  
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;  
+  font-size: 18px;
+  word-wrap: break-word;
+  background-color: var(--VerydarkblueMain);
+}
+
+.container{
+  background-color: var(--veryDarkBlueCard);
+  padding: 25px 25px 30px 25px;
+  max-width: 300px;
+  max-height: 545px;
+  border-radius: 15px;
+  box-shadow: 0px 17px 5px 17px rgba(0, 0, 0, 5%);
+}
+
+.image{
+  position: relative;
+  cursor: pointer;
+}
+
+.nft{
+  border-radius: 10px;
+}
+
+.hover{
+  background-color: var(--Cyan);
+  border-radius: 10px;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.eye {
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+}
+
+.image:hover .hover {
+  opacity: 0.5;
+}
+
+.image:hover .hover + .eye {
+  display: block;
+}
+
+.title{
+  color: var(--white);
+  padding-top: 23px;
+  font-size: 22px;
+}
+
+.description{
+  color: var(--softBlue);
+  font-weight: 300;
+  padding-top: 12px;
+  line-height: 1.6;
+}
+
+.atributes{
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 22px;
+  font-size: 16px;
+  font-weight: 300;
+  border-bottom: 1px solid var(--veryDarkBlueLine);
+}
+
+.price{
+  display: flex;
+  flex: 1;
+  color: var(--Cyan);
+  font-weight: 600;
+}
+
+.days{
+  display: flex;
+  flex: 1;
+  color: var(--softBlue);
+  justify-content: end;
+}
+
+.icon{
+  width: 10px;
+  padding-right: 7px;
+}
+
+.iconClock > .icon {
+  width: 18px;
+}
+
+
+.creator{
+  display: flex;
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.photo{
+  width: 30px;
+  border: solid 1px var(--white);
+  border-radius: 50%;
+}
+
+.nameCreation{
+  align-self: center;
+  color: var(--softBlue);
+  padding-left: 15px;
+}
+
+.name{
+  color: var(--white);
+  cursor: pointer;
+}
+
+.name:hover{
+  color: var(--Cyan);
+}
+
+@media(max-width: 500px){
+  .container{
+    margin: 0px 25px;
+  }
+}
