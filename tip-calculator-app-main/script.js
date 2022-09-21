@@ -10,7 +10,7 @@ amount.innerHTML = "0.00";
 total.innerHTML = "0.00";
 
 button.forEach((event) => event.addEventListener("click", tipPercentage));
-custom.addEventListener("change", Tipcustom);
+custom.addEventListener("keyup", Tipcustom);
 resetButton.addEventListener("click", resetFunction);
 
 function tipPercentage(event) {
@@ -25,7 +25,7 @@ function tipPercentage(event) {
   }
 }
 
-function Tipcustom(){
+function Tipcustom(e){
   const tipValue = parseInt(custom.value);
   const people = parseInt(person.value);
   if (people < 0 || isNaN(people) == true) {

@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <script src="https://kit.fontawesome.com/85717e8a6f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Advice generator app</title>
+    <link rel="stylesheet" href="style.css" />
 
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body>
+    <main>
+      <p class="adviceTitle">ADVICE #<span id="id"></span></p>
+      <h1 id="advicePhrase"></h1>
+      <picture>
+        <source
+          media="(max-width: 500px)"
+          srcset="./images/pattern-divider-mobile.svg"
+        />
+        <img
+          class="divider"
+          src="./images/pattern-divider-desktop.svg"
+          alt=""
+          aria-hidden="true"
+        />
+      </picture>
+      <button onclick="requestAPI()">
+        <img class="dice" src="images/icon-dice.svg" alt="dice-icon" />
+      </button>
+    </main>
 
-</head>
-<body>
-    <div class="container">
-    <p class="adviceID">Advice #<span class="id"></span></p>
-    <h1 class="advice"></h1>
-    <p><i class="fa-solid fa-pause"></i></p>
-    <button class="random"><i class="fa-solid fa-dice-five"></i></button>
-  </div>
-
-</body>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
