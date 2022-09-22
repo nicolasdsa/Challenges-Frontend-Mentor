@@ -1,33 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
-
-img{
+:root {
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+  --GrayishBlue: hsl(212, 23%, 69%);
+  --LightGrayishBlue: hsl(210, 46%, 95%);
 }
-:root{
-  --veryDarkGrayishBlue: hsl(217, 19%, 35%);
-  --desaturatedDarkBlue: hsl(214, 17%, 51%);
-  --grayishBlue: hsl(212, 23%, 69%);
-  --lightGrayishBlue: hsl(210, 46%, 95%);
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--LightGrayishBlue);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-body{
-  font-family: 'Manrope', sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.container{
-  max-width: 730px;
-  max-height: 280px;
+main {
   display: flex;
+  max-width: 730px;
+  max-height: 260px;
+  border-radius: 20px;
 }
 
-.drawers{
-  flex: 1 1 285px;
+.imgDiv {
+  flex: 1;
 }
 
-.attention{
-  flex: 1 1 480px;
-}
-
-.teste{
+.drawers {
   width: 100%;
 }
 
+.text {
+  flex: 1;
+  padding: 40px 40px 30px 40px;
+  background-color: white;
+}
+
+.text h1 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+.bottom {
+  display: flex;
+}
+
+.avatar {
+  display: flex;
+  flex: 3;
+}
+
+.divAvatar {
+  flex: 1;
+}
+
+.divAvatar img {
+  border-radius: 50%;
+  max-width: 80%;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  text-align: start;
+}
+
+.information p:first-child {
+  align-content: flex-end;
+}
+
+.information .share {
+  flex: 1;
+  text-align: end;
+  align-self: center;
+}
